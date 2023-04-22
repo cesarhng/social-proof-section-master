@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--White);
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    "article rating"
+    "comments comments";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: auto;
+}
+
+.article {
+    grid-area: "article";
+    background-color: red;
+    display: flex;
+}
+
+.rating {
+    grid-area: "rating";
+    background-color: aqua;
+    display: flex;
+}
+
+.comments {
+    grid-area: "comments";
+    background-color: yellow;
+    display: flex;
+}
